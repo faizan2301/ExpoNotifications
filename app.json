@@ -1,8 +1,7 @@
 {
   "expo": {
     "name": "Notifications",
-    "slug": "Notifications",
-    "projectId": "984cf678-8e14-4354-8d29-3bbf41efc205",
+    "slug": "notifications",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -12,9 +11,7 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.notifications"
@@ -23,7 +20,15 @@
       "favicon": "./assets/favicon.png"
     },
     "android": {
-      "package": "com.notifications"
-    }
+      "package": "com.notifications",
+      "googleServicesFile": "./google-services.json"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "2c4d0d1c-26bb-412f-a69f-a306ab9f65a7"
+      }
+    },
+    "owner": "faizii_23",
+    "plugins": ["expo-notifications"]
   }
 }
